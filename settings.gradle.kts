@@ -1,2 +1,2 @@
-rootProject.name = "result4k-hamcrest-matchers"
+rootProject.name = "result4k-hamkrest-matchers"
 
