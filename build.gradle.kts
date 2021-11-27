@@ -14,9 +14,9 @@ val hamkrestVersion = "1.8.0.1"
 val result4kVersion = "1.11.2.1"
 
 dependencies {
-    implementation("com.natpryce:hamkrest:$hamkrestVersion")
-    implementation("dev.forkhandles:result4k:$result4kVersion")
-    implementation(platform("dev.forkhandles:forkhandles-bom:$result4kVersion"))
+    api("com.natpryce:hamkrest:$hamkrestVersion")
+    api("dev.forkhandles:result4k:$result4kVersion")
+    api(platform("dev.forkhandles:forkhandles-bom:$result4kVersion"))
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
