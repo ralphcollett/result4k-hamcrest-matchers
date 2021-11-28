@@ -1,5 +1,7 @@
 plugins {
     kotlin("jvm") version "1.5.31"
+    `maven-publish`
+    signing
 }
 
 group = "ralcoll"
@@ -24,4 +26,48 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("mavenJava") {
+            artifactId = "result4k-hamkrest-matchers"
+            versionMapping {
+                usage("java-api") {
+                    fromResolutionOf("runtimeClasspath")
+                }
+                usage("java-runtime") {
+                    fromResolutionResult()
+                }
+            }
+            pom {
+                name.set("result4k-hamkrest-matchers")
+                description.set("Result4k Hamkrest matchers.")
+                url.set("https://github.com/ralphcollett/result4k-hamkrest-matchers")
+                developers {
+                    developer {
+                        id.set("ralph.collett")
+                        name.set("Ralph Collett")
+                        email.set("ralph.collett@gmail.com")
+                    }
+                }
+                scm {
+                    connection.set("git@github.com:ralphcollett/result4k-hamkrest-matchers.git")
+                }
+            }
+        }
+
+    }
+    repositories {
+        maven {
+            val releasesRepoUrl = layout.buildDirectory.dir("repos/releases")
+            val snapshotsRepoUrl = layout.buildDirectory.dir("repos/snapshots")
+            url = uri(if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl)
+        }
+    }
 }
