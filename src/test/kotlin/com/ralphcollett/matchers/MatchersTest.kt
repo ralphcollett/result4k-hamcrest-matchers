@@ -1,4 +1,4 @@
-package ralcoll.matchers
+package com.ralphcollett.matchers
 
 import com.natpryce.hamkrest.*
 import com.natpryce.hamkrest.assertion.assertThat

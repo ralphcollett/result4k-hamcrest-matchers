@@ -4,7 +4,7 @@ plugins {
     signing
 }
 
-group = "ralcoll"
+group = "com.ralphcollett"
 version = "1.0-SNAPSHOT"
 
 repositories {
