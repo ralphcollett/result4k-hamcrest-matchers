@@ -2,6 +2,8 @@
 
 [Result4k](https://github.com/npryce/result4k/) [Hamkrest](https://github.com/npryce/hamkrest) matchers.
 
+[![Build Status](https://app.travis-ci.com/ralphcollett/result4k-hamkrest-matchers.svg?branch=main)](https://app.travis-ci.com/ralphcollett/result4k-hamkrest-matchers)
+
 ## Example usage
 
 ```kotlin
