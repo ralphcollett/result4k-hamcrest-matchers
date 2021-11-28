@@ -5,9 +5,6 @@ plugins {
     id("net.researchgate.release") version "2.8.1"
 }
 
-group = "com.ralphcollett"
-version = "1.0-SNAPSHOT"
-
 repositories {
     mavenCentral()
 }
