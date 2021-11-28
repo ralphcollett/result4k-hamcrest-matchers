@@ -2,6 +2,7 @@ plugins {
     kotlin("jvm") version "1.5.31"
     `maven-publish`
     signing
+    id("net.researchgate.release") version "2.8.1"
 }
 
 group = "com.ralphcollett"
