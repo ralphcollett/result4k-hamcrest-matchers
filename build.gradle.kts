@@ -1,3 +1,6 @@
+val sonatypeUsername: String by project
+val sonatypePassword: String by project
+
 plugins {
     kotlin("jvm") version "1.5.31"
     `maven-publish`
@@ -63,9 +66,13 @@ publishing {
     }
     repositories {
         maven {
-            val releasesRepoUrl = layout.buildDirectory.dir("repos/releases")
-            val snapshotsRepoUrl = layout.buildDirectory.dir("repos/snapshots")
+            val releasesRepoUrl = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
+            val snapshotsRepoUrl = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
             url = uri(if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl)
+            credentials {
+                username = sonatypeUsername
+                password = sonatypePassword
+            }
         }
     }
 }
