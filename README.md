@@ -3,6 +3,7 @@
 [Result4k](https://github.com/npryce/result4k/) [Hamkrest](https://github.com/npryce/hamkrest) matchers.
 
 [![Build Status](https://app.travis-ci.com/ralphcollett/result4k-hamkrest-matchers.svg?branch=main)](https://app.travis-ci.com/ralphcollett/result4k-hamkrest-matchers)
+[![Maven Central](https://img.shields.io/maven-central/v/com.ralphcollett/result4k-hamkrest-matchers.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.ralphcollett%22%20AND%20a%3A%22result4k-hamkrest-matchers%22)
 
 ## Example usage
 
