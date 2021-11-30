@@ -29,6 +29,10 @@ tasks.test {
     useJUnitPlatform()
 }
 
+tasks.withType<GenerateModuleMetadata> {
+    enabled = false
+}
+
 tasks {
     afterReleaseBuild { dependsOn(publish) }
 }
