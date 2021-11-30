@@ -29,6 +29,10 @@ tasks.test {
     useJUnitPlatform()
 }
 
+tasks {
+    afterReleaseBuild { dependsOn(publish) }
+}
+
 java {
     withJavadocJar()
     withSourcesJar()
