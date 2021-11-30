@@ -17,10 +17,13 @@ assertThat(result, isFailure("12345"))
 assertThat(result, isFailure(startsWith("123")))
 ```
 
-Requires imports
+Uses imports
 
 ```
-import com.natpryce.hamkrest.*
+import com.ralphcollett.matchers.isFailure
+import com.ralphcollett.matchers.isSuccess
+import com.natpryce.hamkrest.greaterThan
+import com.natpryce.hamkrest.startsWith
 import com.natpryce.hamkrest.assertion.assertThat
 import dev.forkhandles.result4k.Result
 import org.junit.jupiter.api.Test
