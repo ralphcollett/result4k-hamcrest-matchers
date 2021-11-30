@@ -25,3 +25,11 @@ import com.natpryce.hamkrest.assertion.assertThat
 import dev.forkhandles.result4k.Result
 import org.junit.jupiter.api.Test
 ```
+
+## Download
+
+Group Id: ```com.ralphcollett```
+
+Artifact Id: ```result4k-hamkrest-matchers```
+
+More instructions: [![Maven Central](https://img.shields.io/maven-central/v/com.ralphcollett/result4k-hamkrest-matchers.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.ralphcollett%22%20AND%20a%3A%22result4k-hamkrest-matchers%22)
