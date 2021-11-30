@@ -1,5 +1,5 @@
-val sonatypeUsername: String by project
-val sonatypePassword: String by project
+val sonatypeUsername: String? by project
+val sonatypePassword: String? by project
 
 plugins {
     kotlin("jvm") version "1.5.31"
