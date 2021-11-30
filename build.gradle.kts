@@ -42,6 +42,7 @@ publishing {
     publications {
         create<MavenPublication>("mavenJava") {
             artifactId = "result4k-hamkrest-matchers"
+            from(components["java"])
             versionMapping {
                 usage("java-api") {
                     fromResolutionOf("runtimeClasspath")
