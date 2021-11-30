@@ -57,6 +57,12 @@ publishing {
                         email.set("ralph.collett@gmail.com")
                     }
                 }
+                licenses {
+                    license {
+                        name.set("Apache License 2.0")
+                        url.set("https://github.com/ralphcollett/result4k-hamkrest-matchers/blob/main/LICENSE")
+                    }
+                }
                 scm {
                     connection.set("git@github.com:ralphcollett/result4k-hamkrest-matchers.git")
                 }
